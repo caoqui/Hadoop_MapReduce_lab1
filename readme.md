@@ -13,9 +13,9 @@
 
 ## Collaborators (your-team-name)
 - `20120560` **Member 1** ([qui7d18@gmail.com](https://github.com/caoqui))
-- `20120089` **Member 2** ([@githubaccount2](https://github.com/githubaccount2))
-- `20120130` **Member 3** ([@githubaccount3](https://github.com/githubaccount3))
-- `20120397` **Member 4** ([@githubaccount4](https://github.com/githubaccount4))
+- `20120089` **Member 2** ([hoangitusk20@gmail.com](https://github.com/hoangitusk20))
+- `20120130` **Member 3** ([broccolibonjwa@gmail.com](https://github.com/dhxnlc))
+- `20120397` **Member 4** ([20120397](https://github.com/20120397))
 ## Instructors
 - `HCMUS` **Đoàn Đình Toàn** ([@ddtoan](ddtoan18@clc.fitus.edu.vn))
 - `HCMUS` **Nguyễn Ngọc Thảo** ([@nnthao](nnthao@fit.hcmus.edu.vn))
@@ -42,8 +42,8 @@ Then using the `convert_md_to_pdf.sh` to export your report to pdf.
 ```yaml
 ---
 title: "Lab 01: A Gentle Introduction to Hadoop"
-author: ["your-team-name"]
-date: "yyyy-mm-dd"
+author: ["HugeData"]
+date: "2023-03-1"
 subtitle: "CSC14118 Introduction to Big Data 20KHMT1"
 lang: "en"
 titlepage: true
