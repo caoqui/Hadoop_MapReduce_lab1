@@ -28,8 +28,8 @@ code-block-font-size: \scriptsize
 MSSV       | FULLNAME             | TASKS           
 -----------|----------------------|-----------
 20120560   | Cao Đinh Quí         | 1, 2.1.3, write report           
-20120089   |  Lê Xuân Hoàng       | 1, 2.1.1, 4                
-20120130  | Đinh Thị Hoàng Linh   | 1, 2.1.4, 4               
+20120089   | Lê Xuân Hoàng        | 1, 2.1.1, 4                
+20120130   | Đinh Thị Hoàng Linh  | 1, 2.1.4, 4               
 20120397   | Bùi Quang Tùng       | 1, 2.1.2, 3               
 
 ### COMPLETION RATE:

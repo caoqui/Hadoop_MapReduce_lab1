@@ -12,7 +12,7 @@
 
 
 ## Collaborators (your-team-name)
-- `20120560` **Member 1** ([qui7d18@gmail.com](https://github.com/githubaccount1))
+- `20120560` **Member 1** ([qui7d18@gmail.com](https://github.com/caoqui))
 - `20120089` **Member 2** ([@githubaccount2](https://github.com/githubaccount2))
 - `20120130` **Member 3** ([@githubaccount3](https://github.com/githubaccount3))
 - `20120397` **Member 4** ([@githubaccount4](https://github.com/githubaccount4))
