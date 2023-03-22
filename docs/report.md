@@ -100,19 +100,28 @@ _____________________________________________________________
 _____________________________________________________________
 ## 3.  Running a warm-up problem: Word Count
 #### The process and result: 
-![add_check_classpath:](images/session03/add_check_classpath.png)
-![add_libary:](images/session03/add_libary.png)
 ![check_JPS:](images/session03/check_JPS.png)
-![check_run:](images/session03/check_run.png)
-![copy_to_hd:](images/session03/copy_to_hd.png)
+run Hadoop
 ![create_file:](images/session03/create_file.png)
-![result:](images/session03/result.png)
-![run_1:](images/session03/run_1.png)
+Create folder to work
+![add_check_classpath:](images/session03/add_check_classpath.png)
+Environment setting
+![add_libary:](images/session03/add_libary.png)
+Add libary
 ![toJar:](images/session03/toJar.png)
-
+change file to jar
+![copy_to_hd:](images/session03/copy_to_hd.png)
+Copy from local to hadoop
+![run_1:](images/session03/run_1.png)
+Complie and run
+![check_run:](images/session03/check_run.png)
+Check to see if it is successful
+![result:](images/session03/result.png)
+Result
 _____________________________________________________________
 ## 4.  Bonus
 #### 4.1. Extended Word Count: Unhealthy relationships
+![result_s4_1](images/session04/result_s4_1.png)
 - Input:
 A D
 A B
