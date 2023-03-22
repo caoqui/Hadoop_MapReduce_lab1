@@ -44,39 +44,174 @@ SESSION       | RATE
 ## 1.  Setting up Single-node Hadoop Cluster
 ### All members finished successfully.
 #### The process:
+### **Step 1: Download hadoop-3.3.4.tar.gz**
+Download from link: https://www.apache.org/dyn/closer.cgi/hadoop/common/hadoop-3.3.4/hadoop-3.3.4.tar.gz
+
+Then extract to Home.
 ![1.](images/session01/process/1.png)
+
+
 ![2.](images/session01/process/2.png)
-![3.](images/session01/process/3.png)
+### **Step 2: Install ssh**
+Type:
+```
+sudo apt get-get install ssh
+```
+Then check:
+```
+ssh -V
+```
 ![4.](images/session01/process/4.png)
+### **Step 3: Install pdsh**
+Type:
+```
+sudo apt-get install pdsh
+```
+Then check:
+```
+pdsh -V
+```
 ![5.](images/session01/process/5.png)
+
+
 ![6.](images/session01/process/6.png)
+### **Step 4: Install Java**
+Check if your computer has java installed:
+```
+java --version
+```
+If Java is already installed, there is no need to reinstall it. But if you want to install Java then type:
+```
+sudo apt install openjdk-8-jdk -y
+```
 ![7.](images/session01/process/7.png)
+### **Step 5: Create and Install SSH Certificates**
+```
+ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
+```
 ![8.](images/session01/process/8.png)
+
+Save information:
+```
+cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+```
+
 ![9.](images/session01/process/9.png)
-![10.](images/session01/process/10.png)
-![11.](images/session01/process/11.png)
+
+Grant permissions to the user:
+```
+chmod 0600 ~/.ssh/authorized_keys
+```
+![11.](images/session01/process/10.png)
+### **Step 6: Edit bashrc file.**
+```
+nano ~/.bashrc
+```
+
 ![12.](images/session01/process/12.png)
+### **Step 7: Edit hadoop-env.sh file.**
+```
+nano ~/hadoop-3.3.4/etc/hadoop/hadoop-env.sh
+```
 ![13.](images/session01/process/13.png)
+
+
 ![14.](images/session01/process/14.png)
+### **Step 8: Edit core-site.xml**
+Create a tmp transit folder and grant all users access to it.
+```
+mkdir -p ~/hadoop-3.3.4/tmp
+chmode 777 ~/hadoop-3.3.4/tmp
+```
 ![15.](images/session01/process/15.png)
+
+Edit core-site.xml:
+```
+nano ~/hadoop-3.3.4/etc/hadoop/core-site.xml
+```
+
 ![16.](images/session01/process/16.png)
+
+
 ![17.](images/session01/process/17.png)
+### **Step 9: Edit mapred-site.xml**
+```
+nano ~/hadoop-3.3.4/etc/hadoop/mapred-site.xml
+```
 ![18.](images/session01/process/18.png)
+### **Step 10: Edit hdfs-site.xml**
+Create two folder namenode and datanode
+```
+mkdir -p /home/hoang/hadoop-3.3.4/data/namenode
+mkdir -p /home/hoang/hadoop-3.3.4/data/datanode
+```
 ![19.](images/session01/process/19.png)
+
+Edit hdfs-site.xml
+```
+nano ~/hadoop-3.3.4/etc/hadoop/hdfs-site.xml
+```
+
 ![20.](images/session01/process/20.png)
+### **Step 11: Edit yarn-site.xml**
+```
+nano ~/hadoop-3.3.4/etc/hadoop/hdfs-site.xml
+```
 ![21.](images/session01/process/21.png)
+
+
 ![22.](images/session01/process/22.png)
+
+### **Step 12: New Hadoop system file format**
+```
+hdfs namenode -format
+```
 ![23.](images/session01/process/23.png)
+
+### **Step 13: Start nodes**
+Run namenode,datanode, secondary namenode:
+```
+start-dfs.sh
+```
 ![24.](images/session01/process/24.png)
+
+Run yarn:
+
+```
+start-yarn.sh
+```
+
+![25.](images/session01/process/25.png)
+### **Step 14: Check result.**
 ![20120089.](images/session01/process/20120089.png "20120089")
+
+
 ![26.](images/session01/process/26.png)
+
+
 ![27.](images/session01/process/27.png)
 
-#### Result:
+## **Result of all members:**
+
+**20120560 - Cao Đình Qúi:**
+
 ![20120560.](images/session01/20120560.png "20120560")
+
+**20120397 - Bùi Quang Tùng:**
+
+
 ![20120397.](images/session01/20120397.png "20120397")
+
+**20120089 - Lê Xuân Hoàng:**
+
+
 ![20120089.](images/session01/process/20120089.png "20120089")
+
+**20120130 - Đinh thị Hoàng Linh:**
+
+
 ![20120130.](images/session01/20120130.png "20120130")
+
 _____________________________________________________________
 ## 2.  Introduction to MapReduce
 #### 2.1. How do the input keys-values, the intermediate keys-values, and the output keys-values relate? 
@@ -100,24 +235,42 @@ _____________________________________________________________
 _____________________________________________________________
 ## 3.  Running a warm-up problem: Word Count
 #### The process and result: 
-![check_JPS:](images/session03/check_JPS.png)
 - run Hadoop
-![create_file:](images/session03/create_file.png)
+
+![check_JPS:](images/session03/check_JPS.png)
+
 - Create folder to work
-![add_check_classpath:](images/session03/add_check_classpath.png)
+
+![create_file:](images/session03/create_file.png)
+
 - Environment setting
-![add_libary:](images/session03/add_libary.png)
+
+![add_check_classpath:](images/session03/add_check_classpath.png)
+
 - Add libary
-![toJar:](images/session03/toJar.png)
+
+![add_libary:](images/session03/add_libary.png)
+
 - Change file to jar
-![copy_to_hd:](images/session03/copy_to_hd.png)
+
+![toJar:](images/session03/toJar.png)
+
 - Copy from local to hadoop
-![run_1:](images/session03/run_1.png)
+
+![copy_to_hd:](images/session03/copy_to_hd.png)
+
 - Complie and run
-![check_run:](images/session03/check_run.png)
+
+![run_1:](images/session03/run_1.png)
+
 - Check to see if it is successful
-![result:](images/session03/result.png)
+
+![check_run:](images/session03/check_run.png)
+
 - Result
+
+![result:](images/session03/result.png)
+
 _____________________________________________________________
 ## 4.  Bonus
 #### 4.1. Extended Word Count: Unhealthy relationships
