@@ -292,3 +292,7 @@ E	eq
 
 _____________________________________________________________
 ## References
+#### ref1: [ Example:_WordCount_v1.0 Apache Hadoop 3.3.4 – MapReduce Tutorial](https://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html)
+#### ref2: [  Cài đặt hadoop-3.3.1 Pseudo-distributed mode](https://www.youtube.com/watch?v=MZ_FUEnbrR4)
+#### ref2: [ Apache Hadoop 3.3.4 – Hadoop: Setting up a Single Node Cluster.](https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html )
+#### Book: Jeffrey Dean and Sanjay Ghemawat. MapReduce: Simplified Data Processing on Large Clusters.In OSDI’04: Sixth Symposium on Operating System Design and Implementation, pages 137–150, San Francisco, CA, 2004.
