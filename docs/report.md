@@ -288,6 +288,20 @@ B	eq
 C	neg
 D	eq
 E	eq
+
+Explain:
+- To solve this problem, for each relation a R b, increase the counter of word "a" by 1, and decrease the counter of word "b" by 1.
+
+![map_function](images/session04/map_function.png)
+
+
+- After calculating the sum in the Reduce function, consider the condition that the counter is greater than 0, equal to 0 or less than 0 to output the appropriate result.
+
+![reducer](images/session04/reducer.png)
+
+
+- Except for incrementing the counter and outputting the result, the rest of the processing is exactly the same as the "word count" problem. However, we need to change the data type in some dunctions to accommodate the new results.
+
 #### 4.2. Setting up Fully Distributed Mode
 
 _____________________________________________________________
