@@ -140,7 +140,7 @@ nano ~/hadoop-3.3.4/etc/hadoop/mapred-site.xml
 ```
 ![18.](images/session01/process/18.png)
 ### **Step 10: Edit hdfs-site.xml**
-Create two folder namenode and datanode
+Create two folders namenode and datanode
 ```
 mkdir -p /home/hoang/hadoop-3.3.4/data/namenode
 mkdir -p /home/hoang/hadoop-3.3.4/data/datanode
@@ -300,7 +300,7 @@ Explain:
 ![reducer](images/session04/reducer.png)
 
 
-- Except for incrementing the counter and outputting the result, the rest of the processing is exactly the same as the "word count" problem. However, we need to change the data type in some dunctions to accommodate the new results.
+- Except for incrementing the counter and outputting the result, the rest of the processing is exactly the same as the "word count" problem. However, we need to change the data type in some functions to accommodate the new results.
 
 #### 4.2. Setting up Fully Distributed Mode
 
