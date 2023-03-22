@@ -76,7 +76,7 @@ SESSION       | RATE
 ![20120560.](images/session01/20120560.png "20120560")
 ![20120397.](images/session01/20120397.png "20120397")
 ![20120089.](images/session01/process/20120089.png "20120089")
-![20120089.](images/session01/process/20120089.png "20120397")
+![20120130.](images/session01/20120130.png "20120130")
 _____________________________________________________________
 ## 2.  Introduction to MapReduce
 #### 2.1. How do the input keys-values, the intermediate keys-values, and the output keys-values relate? 
