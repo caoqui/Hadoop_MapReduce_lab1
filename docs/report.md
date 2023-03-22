@@ -38,7 +38,7 @@ SESSION       | RATE
 1          | 100%       
 2          | 100%       
 3          | 100%       
-4          | ?       
+4          | 50%       
 
 ---------------------------------------------------------------
 ## 1.  Setting up Single-node Hadoop Cluster
@@ -191,7 +191,7 @@ start-yarn.sh
 
 ![27.](images/session01/process/27.png)
 
-## **Result of all members:**
+### **Result of all members:**
 
 **20120560 - Cao Đình Qúi:**
 
